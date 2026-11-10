@@ -24,7 +24,7 @@ File (disk)
   -> download or ZIP
 ```
 
-The only network requests are the page assets. The processing graph is a set of pure-ish functions in `src/tools/local/`; the React component owns the file list, options, progress, errors, and object URLs.
+The image-processing path makes no network requests. The page still loads its own assets, and the site may load analytics, but none of that carries image bytes. The processing graph is a set of pure-ish functions in `src/tools/local/`; the React component owns the file list, options, progress, errors, and object URLs.
 
 ## Decoding an animation
 
