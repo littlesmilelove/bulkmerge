@@ -34,7 +34,7 @@ Every one of those jobs runs in the browser tab. The file is decoded locally, pr
 - **Resize animated GIFs frame by frame** — [GIF Resizer](https://bulkmerge.com/tools/gif-resizer) decodes every frame, scales it, and writes the animation back with the delays it came with. One click gives you 128×128 for Discord or Slack.
 - **Convert animated WebP to GIF** — [WebP to GIF Converter](https://bulkmerge.com/tools/webp-to-gif) uses the browser's own `ImageDecoder` to split frames and preserve timing. A still WebP becomes a one-frame GIF.
 - **Compress GIFs to a target size** — [Compress GIF](https://bulkmerge.com/tools/compress-gif) applies the three levers that actually move bytes: fewer frames, fewer colours, and fewer pixels. Set a limit and the page retries until the file fits.
-- **Batch output as one ZIP** — Process several files and download the results individually or as a single ZIP, written in the tab by a small store-only ZIP writer.
+- **Batch GIF processing with one ZIP** — Process several GIF or WebP files and download the converted results individually or as a single ZIP, written in the tab by a small store-only ZIP writer.
 - **Discord and Slack presets** — One click for 128×128 emoji, a 10 MB upload cap, 64 colours, or half-size output.
 - **Privacy by construction** — No upload, no account, no file retention. The network panel stays quiet while a file is processed.
 - **No network dependency in the processing path** — Once the page is loaded, decoding, scaling, encoding, and ZIP creation are all local function calls.
